@@ -31,6 +31,27 @@ namespace com.Klazapp.Utility
             //Retrieve pooling component
             return RetrievePool(poolingPrefab);
         }
+        
+        public T GetPool<T>(IPoolingPrefab poolingPrefab, (float3 pos, quaternion rot, bool enable) pooledEntitySpawnInfo) where T : class
+        {
+            //Create pool if not exist 
+            CreatePoolIfNotExist(poolingPrefab);
+           
+            //Retrieve pooling component
+            var pooledEntity = RetrievePool(poolingPrefab);
+            
+            //Null check only in editor
+#if IN_EDITOR_DEBUGGING
+            if (pooledEntity == null)
+            {
+                LogMessage.DebugError("No Entity found");
+                return null;
+            }
+#endif
+            pooledEntity.OnCreated(true, new float3(0), quaternion.identity);
+
+            return pooledEntity as T;
+        }
 
         public void ReturnPool(IPoolingPrefab poolingClone)
         {
