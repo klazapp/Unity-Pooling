@@ -12,8 +12,8 @@ The `Pooling` utility, part of the `com.Klazapp.Utility` namespace, is designed 
 To use `Pooling`, certain dependencies are required. Ensure these are included in your Unity project.
 - **Unity Version**: Minimum Unity 2020.3 LTS.
 - **Repository**: [LogMessage Unity Logger](https://github.com/klazapp/Unity-Logger-Public.git)
-- **Repository**: [LogMessage Unity Logger](https://github.com/klazapp/Unity-Singleton-Public.git)
-- **Repository**: [LogMessage Unity Logger](https://github.com/klazapp/Unity-Inspector-Public.git)
+- **Repository**: [LogMessage Unity Singleton](https://github.com/klazapp/Unity-Singleton-Public.git)
+- **Repository**: [LogMessage Unity Inspector](https://github.com/klazapp/Unity-Inspector-Public.git)
 - Unity Mathematics dll
 
 ## Compatibility
