@@ -12,16 +12,13 @@
   "category": "Utility",
   "dependencies": {
     "com.unity.mathematics": "1.2.6",
-    "com.klazapp.logger": "1.0.0",
-    "com.klazapp.singleton": "1.0.0",
-    "com.klazapp.inspector": "1.0.0"
   },
   "author": {
       "name": "Klazapp",
       "email": "klazapp@klazapp.com",
       "url": "https://www.klazapp.com"
     },
-    "documentationUrl": "https://github.com/klazapp/Unity-Pooling-Public",
-    "changelogUrl": "https://github.com/klazapp/Unity-Pooling-Public",
-    "licensesUrl": "https://github.com/klazapp/Unity-Pooling-Public"
+    "documentationUrl": "https://github.com/klazapp/Unity-Pooling-Private",
+    "changelogUrl": "https://github.com/klazapp/Unity-Pooling-Private",
+    "licensesUrl": "https://github.com/klazapp/Unity-Pooling-Private"
 }
